@@ -8,10 +8,10 @@ import time #time
 from email.MIMEText import MIMEText
 class SMTP(object):
       def title(self):
-            print "       PYTHON MAIL BOMBER IS WORKING :) "
+            print ("       PYTHON MAIL BOMBER IS WORKING :) ")
  
       def SMTPconnect(self):
-            print "We are in the SMTPconnect" #list of SMTP server - http://www.e-eeasy.com/SMTPServerList.aspx
+            print ("We are in the SMTPconnect") #list of SMTP server - http://www.e-eeasy.com/SMTPServerList.aspx
             self.smtpserver=raw_input("\nEnter SMTP server: ")
             self.smtpport=input("Enter SMTP port (Usualy 25 or 465): ")
             try:
@@ -30,8 +30,8 @@ class SMTP(object):
                   time.sleep(3)
                   sys.exit(1)
       def buildemail(self):
-            print " We are inside Buildemail "
-            print "\tBuilding message part"
+            print( " We are inside Buildemail ")
+            print ("\tBuilding message part")
             self.From = raw_input("\nFrom: ") # From
             self.To = raw_input("\nTo: ") # TO
             self.Subject = raw_input("\nSubject: ") #Subject
@@ -47,8 +47,8 @@ class SMTP(object):
                   x+=1
             print "Send %d messages to %s" %(self.ammount,self.To)
             time.sleep(7)
-            print "Thnx for using Mycode!\nhttp://facebook.com/webmaster.pg\n"
-            print " Subscribe :) www.youtube.com/priyankgada "
+            print ("Thnx for using Mycode!\nhttp://facebook.com/webmaster.pg\n")
+            print (" Subscribe :) www.youtube.com/priyankgada ")
 if __name__ == '__main__':
       s = SMTP()
       s.title()
